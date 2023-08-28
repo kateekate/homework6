@@ -31,6 +31,7 @@ class Car {
 
   #isValidYear(val) {
     const currentYear = new Date().getFullYear();
+
     return typeof val === 'number' && val >= 1900 && val <= currentYear;
   }
 
