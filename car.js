@@ -5,9 +5,9 @@ class Car {
   #maxSpeed;
   #maxFuelVolume;
   #fuelConsumption;
-  #currentFuelVolume;
-  #isStarted;
-  #mileage;
+  #currentFuelVolume = 0;
+  #isStarted = false;
+  #mileage = 0;
 
   constructor(
     brand,
@@ -23,9 +23,6 @@ class Car {
     this.maxSpeed = maxSpeed;
     this.maxFuelVolume = maxFuelVolume;
     this.fuelConsumption = fuelConsumption;
-    this.#currentFuelVolume = 0;
-    this.#isStarted = false;
-    this.#mileage = 0;
   }
 
   #isValidString(val) {
